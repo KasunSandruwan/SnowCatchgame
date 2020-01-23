@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_over"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ksnsandaruwangmail.snowcatch.Game_over">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="00"
+            android:textColor="@android:color/white"
+            android:id="@+id/score_label_id"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="Score"
+            android:layout_marginTop="25dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/score_label_Disply_id" />
+
+
+
+        <Button
+            android:text="Retry"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:onClick="retry"
+            android:id="@+id/retry"
+            android:layout_marginTop="92dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="Exit"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:onClick="exit"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:id="@+id/exit"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/retry"
+            android:layout_alignLeft="@+id/retry"
+            android:layout_alignStart="@+id/retry" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
